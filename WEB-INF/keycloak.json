@@ -1,0 +1,11 @@
+{
+    "realm": "bigrealm",
+    "resource": "irisba",
+    "auth-server-url": "https://dev.biz-architect.com:8543/auth",
+    "ssl-required" : "all",
+    "credentials": {
+        "secret": "this is secret"
+    },
+    "use-resource-role-mappings" : true,
+    "disable-trust-manager": true
+}

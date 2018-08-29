@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.castortech.iris.ba.web.home.RestApiApp">
+   <property name="osgi.jaxrs.name" value="RestApp"/>
+   <property name="osgi.jaxrs.application.base" value="/rest"/>
+   <property name="authentication.with" value="keycloak"/>
+   <service>
+      <provide interface="javax.ws.rs.core.Application"/>
+   </service>
+   <implementation class="com.castortech.iris.ba.web.home.RestApiApp"/>
+</scr:component>

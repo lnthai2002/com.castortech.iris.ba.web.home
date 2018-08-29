@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.castortech.iris.ba.web.home.RestFilter">
+   <property name="osgi.jaxrs.name" value="RestFilter"/>
+   <property name="osgi.jaxrs.extension" value="true"/>
+   <property name="osgi.jaxrs.application.select" value="(osgi.jaxrs.name=RestApp)"/>
+   <service scope="prototype">
+      <provide interface="javax.ws.rs.container.ContainerRequestFilter"/>
+   </service>
+   <implementation class="com.castortech.iris.ba.web.home.RestFilter"/>
+</scr:component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.castortech.iris.ba.web.home.Api">
+   <property name="osgi.jaxrs.name" value="RestApi"/>
+   <property name="osgi.jaxrs.resource" value="true"/>
+   <property name="osgi.jaxrs.application.select" value="(osgi.jaxrs.name=RestApp)"/>
+   <service>
+      <provide interface="com.castortech.iris.ba.web.home.Api"/>
+   </service>
+   <reference cardinality="1..1" field="filter" interface="javax.ws.rs.container.ContainerRequestFilter" name="filter"/>
+   <reference cardinality="1..1" field="runtimeRef" interface="org.osgi.service.jaxrs.runtime.JaxrsServiceRuntime" name="runtimeRef"/>
+   <implementation class="com.castortech.iris.ba.web.home.Api"/>
+</scr:component>

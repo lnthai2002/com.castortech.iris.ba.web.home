@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Splash Screen</title>
+<script type="text/javascript" src="/bootstrap/js/jquery.js"
+	charset="UTF-8"></script>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.js"
+	charset="UTF-8"></script>
+<script type="text/javascript"
+	src="/bootstrap/js/jquery.fancybox.pack.js" charset="UTF-8"></script>
+
+<link rel="stylesheet" type="text/css"
+	href="/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css"
+	href="/bootstrap/css/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="/bootstrap/css/loader.css" />
+</head>
+<body style="background: #2980B9 !important;">
+	<div style="width: 700px; margin: 0 auto; margin-top: 150px;">
+		<img class="center-block" style="width: 70%; margin-bottom: 30px;"
+			src="../../drawable/iris_visionWhite.png"> <label
+			style="color: #FFF; font-size: 20px; text-align: center;">Glorious
+			things are waiting for you. We're just getting them ready. </label>
+		<div class="loader"></div>
+		<a id="next" href="/zk/"></a>
+	</div>
+	<script type="text/javascript">
+		$(function($) {
+			document.getElementById('next').click();
+		});
+	</script>
+</body>
+</html>
